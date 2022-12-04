@@ -1,0 +1,78 @@
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 80%;
+  transition: all 0.2s ease-in-out;
+  padding: 2vh;
+}
+
+.box:hover {
+  opacity: 100%;
+  transition: all 0.2s ease-in-out;
+}
+
+.mePicture {
+  height: 8em;
+  width: auto;
+  margin: 2vh;
+  border-radius: 10px;
+  filter: grayscale(100%);
+  transition: 500ms;
+}
+
+.mePicture:hover {
+  filter: grayscale(0%);
+  transition: 500ms;
+}
+
+.title {
+  font-family: var(--font-oswald);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 2.5em;
+  margin: 0;
+  text-align: center;
+}
+
+.subtexts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1vh;
+}
+
+.subtext {
+  padding-left: 1.5vh;
+  padding-right: 1.5vh;
+}
+
+.withBorder {
+  // margin-top: 10px;
+  border-left: 1px solid rgb(145, 145, 145);
+  // padding-top: 10px;
+}
+
+.subtext svg {
+  margin-right: 1vh;
+  width: 16px;
+}
+
+@media screen and (max-width: 992px) {
+  .subtexts {
+    flex-direction: column;
+  }
+  .subtext {
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+  }
+  .withBorder {
+    border-top: 1px solid rgb(145, 145, 145);
+    border-left: none;
+  }
+
+  .box {
+    opacity: 100%;
+  }
+}

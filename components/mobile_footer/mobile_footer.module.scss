@@ -1,0 +1,31 @@
+@use '../../app/variables.module.scss' as *;
+
+.mobileFooter {
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  padding: 2vh;
+  background-color: $primary-color;
+  color: #fff;
+}
+
+@media screen and (min-width: 992px) {
+  .mobileFooter {
+    display: none;
+  }
+}
+
+.iconContainer {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.iconContainer svg {
+  width: 3vh;
+  height: 3vh;
+}

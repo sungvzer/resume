@@ -1,0 +1,37 @@
+.resume {
+  display: flex;
+  flex-direction: column;
+  flex: 4;
+  overflow: scroll;
+  margin-bottom: 2vh;
+}
+
+.resumeTitle {
+  font-size: 2.5em;
+}
+
+.articleSubheader {
+  margin-top: 0;
+  margin-bottom: 0.5vh;
+  font-style: italic;
+  color: #aaa;
+}
+.articleSubheader svg {
+  margin-right: 0.5vh;
+  width: 16px;
+}
+
+.articleHeader {
+  font-size: 1.25em;
+  margin-top: 0;
+  margin-bottom: 0.7vh;
+}
+
+.sectionHeader {
+  margin-bottom: 0.7vh;
+}
+
+.sectionBody {
+  margin-top: 0;
+  margin-bottom: 1.5vh;
+}
