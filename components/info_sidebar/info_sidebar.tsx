@@ -1,7 +1,12 @@
 import Link from 'next/link';
 import { IconType } from 'react-icons';
-import { IoBook } from 'react-icons/io5';
-import { SiGithub, SiKeybase, SiReddit, SiTwitter } from 'react-icons/si';
+import {
+  SiGithub,
+  SiKeybase,
+  SiLinkedin,
+  SiReddit,
+  SiTwitter,
+} from 'react-icons/si';
 import { UrlObject } from 'url';
 import variables from '../../app/variables.module.scss';
 import classes from './info_sidebar.module.scss';
@@ -30,7 +35,7 @@ function InfoLink(props: InfoLinkProps) {
 
 export function InfoSidebar() {
   return (
-    <section className={`${classes.information} `}>
+    <aside className={`${classes.information} `}>
       <h2>Links</h2>
       <ul>
         <InfoLink
@@ -58,12 +63,12 @@ export function InfoSidebar() {
           color={variables.primaryColor}
         />
         <InfoLink
-          href={'https://blog.sungvzer.com'}
-          icon={IoBook}
-          label={'Blog'}
-          color={variables.primaryColor}
+          href={'https://linkedin.com/in/sungvzer'}
+          icon={SiLinkedin}
+          label={'LinkedIn'}
+          color={'#0A66C2'}
         />
       </ul>
-    </section>
+    </aside>
   );
 }

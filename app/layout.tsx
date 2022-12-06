@@ -1,4 +1,6 @@
+import classes from '@/app/home.module.scss';
 import fonts from '@/components/fonts';
+import { InfoSidebar } from '@/components/info_sidebar';
 import React from 'react';
 import { Header, MobileFooter } from '../components';
 import '../styles/globals.scss';
@@ -22,10 +24,16 @@ export default function RootLayout(props: RootLayoutProps) {
   return (
     <html lang='en' className={loadedFonts.join(' ')}>
       <body>
-        <Header />
-        {props.children}
+        <button className={classes.languageButton} title='Switch language'>
+          🇮🇹
+        </button>
+        <InfoSidebar />
 
-        <MobileFooter />
+        <div className={classes.rightBox}>
+          <Header />
+          {props.children}
+          <MobileFooter />
+        </div>
       </body>
     </html>
   );
