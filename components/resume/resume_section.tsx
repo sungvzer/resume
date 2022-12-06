@@ -1,4 +1,4 @@
-import { capitalize } from '@utils/strings';
+import { capitalize } from '@/utils/strings';
 import { ReactNode } from 'react';
 import classes from './resume.module.scss';
 

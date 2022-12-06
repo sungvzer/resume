@@ -54,9 +54,13 @@
   // padding-top: 10px;
 }
 
+.subtext p {
+  vertical-align: middle;
+  margin: 0;
+}
 .subtext svg {
-  margin-right: 1vh;
-  width: 16px;
+  margin-right: 0.5vw;
+  vertical-align: middle;
 }
 
 @media screen and (max-width: 992px) {

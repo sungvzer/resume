@@ -1,4 +1,4 @@
-import fonts from '@components/fonts';
+import fonts from '@/components/fonts';
 import React from 'react';
 import { Header, MobileFooter } from '../components';
 import '../styles/globals.scss';

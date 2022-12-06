@@ -1,5 +1,4 @@
-import { faCalendar, faGraduationCap } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { IoCalendarNumber, IoSchool } from 'react-icons/io5';
 import classes from './resume.module.scss';
 import { ResumeSection } from './resume_section';
 export function Resume() {
@@ -25,11 +24,11 @@ export function Resume() {
           </h3>
 
           <p className={classes.articleSubheader}>
-            <FontAwesomeIcon icon={faGraduationCap} />
+            <IoSchool />
             Università degli studi di Napoli &laquo;Parthenope&raquo;
           </p>
           <p className={classes.articleSubheader}>
-            <FontAwesomeIcon icon={faCalendar} />
+            <IoCalendarNumber />
             <time dateTime='2022-09-01'>September 2022</time> — Ongoing
           </p>
           <p className={classes.sectionBody}>
@@ -43,11 +42,11 @@ export function Resume() {
             Technical Institute Degree in Computer Science
           </h3>
           <p className={classes.articleSubheader}>
-            <FontAwesomeIcon icon={faGraduationCap} />
+            <IoSchool />
             I.T.I.S. G. Ferraris
           </p>
           <p className={classes.articleSubheader}>
-            <FontAwesomeIcon icon={faCalendar} />
+            <IoCalendarNumber />
             <time dateTime='2016-09-01'>September 2016</time> —{' '}
             <time dateTime='2021-06-01'>June 2021</time>
           </p>

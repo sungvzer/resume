@@ -1,17 +1,10 @@
-import {
-  faBriefcase,
-  faEnvelope,
-  faLocationDot,
-  faPhone,
-} from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import me from '@public/images/me.jpg';
+import variables from '@/app/variables.module.scss';
+import me from '@/public/images/me.jpg';
 import Image from 'next/image';
 import Link from 'next/link';
 import { ReactNode } from 'react';
+import { IoBriefcase, IoCall, IoLocation, IoMail } from 'react-icons/io5';
 import classes from './header.module.scss';
-
-import variables from '../../app/variables.module.scss';
 
 function Subtext(props: { children: ReactNode; first?: boolean }) {
   return (
@@ -53,29 +46,38 @@ export function Header() {
         {/* Subtexts */}
         <Subtexts>
           <Subtext first={true}>
-            <FontAwesomeIcon
-              icon={faBriefcase}
-              color={variables.primaryColor}
-            />
-            Software engineer at{' '}
-            <a href='https://kotuko.it' target={'_blank'} rel={'noreferrer'}>
-              Kotuko
-            </a>
+            <p>
+              <IoBriefcase color={variables.primaryColor} />
+              Software engineer at{' '}
+              <a href='https://kotuko.it' target={'_blank'} rel={'noreferrer'}>
+                Kotuko
+              </a>
+            </p>
           </Subtext>
           <Subtext>
-            <FontAwesomeIcon
-              icon={faLocationDot}
-              color={variables.primaryColor}
-            />
-            Southern &#127470;&#127481;
+            {' '}
+            <p>
+              <IoLocation
+                color={variables.primaryColor}
+                width={16}
+                height={16}
+              />
+              Southern &#127470;&#127481;{' '}
+            </p>
           </Subtext>
           <Subtext>
-            <FontAwesomeIcon icon={faPhone} color={variables.primaryColor} />
-            <a href='tel:+39-334-257-5807'>+39 334 257 5807 </a>
+            {' '}
+            <p>
+              <IoCall color={variables.primaryColor} width={16} height={16} />
+              <a href='tel:+39-334-257-5807'>+39 334 257 5807 </a>{' '}
+            </p>
           </Subtext>
           <Subtext>
-            <FontAwesomeIcon icon={faEnvelope} color={variables.primaryColor} />
-            <a href='mailto:jobs@sungvzer.com'>jobs@sungvzer.com</a>
+            {' '}
+            <p>
+              <IoMail color={variables.primaryColor} width={16} height={16} />
+              <a href='mailto:jobs@sungvzer.com'>jobs@sungvzer.com</a>{' '}
+            </p>
           </Subtext>
         </Subtexts>
       </header>

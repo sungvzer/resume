@@ -1,4 +1,4 @@
-import Favicon from '@components/favicon';
+import Favicon from '@/components/favicon';
 
 export default function Head() {
   return (

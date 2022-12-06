@@ -1,11 +1,5 @@
-import {
-  faGithub,
-  faKeybase,
-  faReddit,
-  faTwitter,
-} from '@fortawesome/free-brands-svg-icons';
-import { faBlog } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { IoBook } from 'react-icons/io5';
+import { SiGithub, SiKeybase, SiReddit, SiTwitter } from 'react-icons/si';
 import classes from './mobile_footer.module.scss';
 
 export function MobileFooter() {
@@ -18,7 +12,7 @@ export function MobileFooter() {
             target='_blank'
             rel='noreferrer'
           >
-            <FontAwesomeIcon icon={faReddit} />
+            <SiReddit />
           </a>
         </li>
         <li>
@@ -27,7 +21,7 @@ export function MobileFooter() {
             target='_blank'
             rel='noreferrer'
           >
-            <FontAwesomeIcon icon={faTwitter} />
+            <SiTwitter />
           </a>
         </li>
         <li>
@@ -36,7 +30,7 @@ export function MobileFooter() {
             target='_blank'
             rel='noreferrer'
           >
-            <FontAwesomeIcon icon={faGithub} />
+            <SiGithub />
           </a>
         </li>
         <li>
@@ -45,7 +39,7 @@ export function MobileFooter() {
             target='_blank'
             rel='noreferrer'
           >
-            <FontAwesomeIcon icon={faBlog} />
+            <IoBook />
           </a>
         </li>
         <li>
@@ -54,7 +48,7 @@ export function MobileFooter() {
             target='_blank'
             rel='noreferrer'
           >
-            <FontAwesomeIcon icon={faKeybase} />
+            <SiKeybase />
           </a>
         </li>
       </ul>
