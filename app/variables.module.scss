@@ -1,5 +1,7 @@
 $primary-color: #222;
+$background-color: #f2f2f2;
 
 :export {
   primaryColor: $primary-color;
+  backgroundColor: $background-color;
 }
